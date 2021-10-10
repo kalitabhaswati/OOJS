@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Q7</title>
+	</head>
+	<body>
+		<h2>Array Method</h2>
+		<script>
+const arr = [1, 2, 3, 4, 5];
+
+
+const mappedArr = arr.map(function (el) {
+	return el * 2;
+});
+console.log("Double mapped array", mappedArr);
+
+
+const evenElArr = arr.filter(function (el) {
+	return el % 2 == 0;
+});
+console.log("Even elements array", evenElArr);
+
+
+const total = arr.reduce(function (prevTotal, curr) {
+	return prevTotal + curr;
+}, 0);
+
+console.log("Total Sum: ", total);
+
+
+console.log("Using for each");
+arr.forEach((e) => console.log(e));
+
+
+
+console.log(
+	"Is every element less than 6 ?",
+	arr.every((el) => el < 6)
+);
+</script>
+</body>
+</html>
